@@ -5,7 +5,7 @@ const phrases = [
     "Maybe so",
     "Computer says no",
     "Nope",
-    "Oh no you didn’t.",
+    "Oh no you didnt.",
     " Let your hair down",
     "Paint the town red.",
     "You are a rock!",
@@ -16,8 +16,11 @@ const phrases = [
 ];
 
 
+
+
  function changeContent() {
     document.getElementById('tryAgain').textContent = phrases[Math.floor(Math.random() * 14)];
     document.getElementById('tryAgain').style.cssText =
         'color:white;width:4.7em;text-align:center;margin-top:-10px;';
 }
+
