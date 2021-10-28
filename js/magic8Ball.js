@@ -15,12 +15,11 @@ const phrases = [
     "Good guys always win",
 ];
 
-
-
-
  function changeContent() {
     document.getElementById('tryAgain').textContent = phrases[Math.floor(Math.random() * 14)];
     document.getElementById('tryAgain').style.cssText =
-        'color:white;width:4.7em;text-align:center;margin-top:-10px;';
-}
+        'color:white;width:4.7em;text-align:center;margin-top:-10px;opacity:1;';
+
+
+ }
 

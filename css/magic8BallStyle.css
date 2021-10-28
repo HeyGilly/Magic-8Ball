@@ -1,70 +1,79 @@
+:root{
+    --headerBackgroundColor: #1abc9c;
+    --white: #fff;
+    --black: #000000;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
-html{
-    padding: 25px;
-}
-header {
-    padding: 20px;
+
+h1 {
+    padding: 30px 0 ;
     text-align: center;
-    background: #1abc9c;
-    color: white;
-    font-size: 30px;
-    box-shadow: 0 0 .2em #000000;
+    background: var(--headerBackgroundColor);
+    color: var(--white);
+    font-size: 3em;
+    box-shadow: 0 0 .2em var(--black);
 }
 
-Body {
+body {
     background-color: #F7FFF0;
 }
 
-div{
-    position:relative;
-    display: block;
-    text-align: center;
+section{
+    position: relative;
+    left: 10%;
+}
 
+
+#background{
+    position: relative;
+    z-index: -5;
 }
 #triangle{
     position: absolute;
-    transform: translate(-519px, 21.5em);
-    width: 8.5rem;
-    margin: auto;
-    z-index: 2;
-}
-#background{
-    position: relative;
-    /*object-fit: cover;*/
-    max-width: 50vw;
-    /*display: block;*/
-    margin: 0 auto;
+    width: 168px;
+    top: 410px;
+    left: 460px;
 }
 
 #tryAgain{
-    /*display: block;*/
-    position:absolute;
-    color: white;
-    /*font-size: 26px;*/
-    transform: translate(52em, 25em);
-    z-index: 3;
+    position: absolute;
+    color: var(--white);
 }
 
-button{
-    width: 12rem;
-    height: 4rem;
-    border-radius:2em;
-    color:#FFFFFF;
-    font-weight:300;
-    background-color:#3369ff;
-    text-transform:uppercase;
-    text-align: center;
-}
-.questionButton{
-    padding-top: 30px;
-    text-align: center;
-}
 
-button:hover{
-    text-shadow: 0 0 .5em rgba(255,255,255,.5);
-    color:#FFFFFF;
-    border-color:#FFFFFF;
-}
+/*#tryAgain{*/
+/*    !*display: block;*!*/
+/*    opacity: 0;*/
+/*    transition: all 2s ease-in-out;*/
+
+/*    position:absolute;*/
+/*    color: white;*/
+/*    !*font-size: 26px;*!*/
+/*    transform: translate(52em, 25em);*/
+/*    z-index: 3;*/
+/*}*/
+
+/*button{*/
+/*    width: 12rem;*/
+/*    height: 4rem;*/
+/*    border-radius:2em;*/
+/*    color:#FFFFFF;*/
+/*    font-weight:300;*/
+/*    background-color:#3369ff;*/
+/*    text-transform:uppercase;*/
+/*    text-align: center;*/
+/*}*/
+/*.questionButton{*/
+/*    padding-top: 30px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*button:hover{*/
+/*    text-shadow: 0 0 .5em rgba(255,255,255,.5);*/
+/*    color:#FFFFFF;*/
+/*    border-color:#FFFFFF;*/
+/*}*/
