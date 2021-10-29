@@ -24,7 +24,7 @@ body {
 
 section{
     position: relative;
-    left: 35vh;
+    left: 32vh;
 }
 
 #background{
@@ -63,7 +63,7 @@ section{
    letter-spacing: -.24px;
     position: absolute;
     top:242px;
-    left: 770px;
+    left: 790px;
    padding: 1rem 1.3rem;
    text-align: center;
    transition: all .15s;
