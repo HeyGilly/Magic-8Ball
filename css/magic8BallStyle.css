@@ -30,7 +30,7 @@ section{
 #background{
     position: relative;
     z-index: -5;
-    animation: shake 2s infinite;
+    animation: shake 6s infinite;
     transform-origin: 50% 50%;
 }
 #triangle{
