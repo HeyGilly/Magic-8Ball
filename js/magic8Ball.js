@@ -34,7 +34,7 @@ function fadeOutEffect() {
         } else {
             clearInterval(fadeEffect);
         }
-    }, 3);
+    }, 300);
 }
 document.getElementById("questionButton").addEventListener('click', fadeOutEffect);
 
