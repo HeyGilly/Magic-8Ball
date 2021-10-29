@@ -24,56 +24,75 @@ body {
 
 section{
     position: relative;
-    left: 10%;
+    left: 35vh;
 }
-
 
 #background{
     position: relative;
     z-index: -5;
+    animation: shake 2s infinite;
+    transform-origin: 50% 50%;
 }
 #triangle{
     position: absolute;
     width: 168px;
     top: 410px;
     left: 460px;
+
 }
 
 #tryAgain{
     position: absolute;
     color: var(--white);
+    font-size: 21px;
+    z-index: 3;
+    top: 490px;
+    left: 493px;
+    text-shadow: 2px 2px 10px var(--white);
+    opacity: 0;
+
+}
+
+#questionButton {
+   background-color: #FFFFFF;
+   border-radius: 40em;
+   box-shadow: #ADCFFF 0 -12px 6px inset;
+   color: #000000;
+   font-size: 1.2rem;
+   font-weight: 700;
+   letter-spacing: -.24px;
+    position: absolute;
+    top:242px;
+    left: 770px;
+   padding: 1rem 1.3rem;
+   text-align: center;
+   transition: all .15s;
+}
+
+#questionButton:hover {
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-6px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(3px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-8px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(2px, 0, 0);
+    }
 }
 
 
-/*#tryAgain{*/
-/*    !*display: block;*!*/
-/*    opacity: 0;*/
-/*    transition: all 2s ease-in-out;*/
+footer{
+    height: 250px;
+    background: var(--headerBackgroundColor);
+    color: var(--white);
 
-/*    position:absolute;*/
-/*    color: white;*/
-/*    !*font-size: 26px;*!*/
-/*    transform: translate(52em, 25em);*/
-/*    z-index: 3;*/
-/*}*/
-
-/*button{*/
-/*    width: 12rem;*/
-/*    height: 4rem;*/
-/*    border-radius:2em;*/
-/*    color:#FFFFFF;*/
-/*    font-weight:300;*/
-/*    background-color:#3369ff;*/
-/*    text-transform:uppercase;*/
-/*    text-align: center;*/
-/*}*/
-/*.questionButton{*/
-/*    padding-top: 30px;*/
-/*    text-align: center;*/
-/*}*/
-
-/*button:hover{*/
-/*    text-shadow: 0 0 .5em rgba(255,255,255,.5);*/
-/*    color:#FFFFFF;*/
-/*    border-color:#FFFFFF;*/
-/*}*/
+}

@@ -15,11 +15,31 @@ const phrases = [
     "Good guys always win",
 ];
 
+const randomPhrases = document.getElementById('tryAgain');
+
  function changeContent() {
-    document.getElementById('tryAgain').textContent = phrases[Math.floor(Math.random() * 14)];
-    document.getElementById('tryAgain').style.cssText =
-        'color:white;width:4.7em;text-align:center;margin-top:-10px;opacity:1;';
-
-
+     randomPhrases.textContent = phrases[Math.floor(Math.random() * 14)];
+     randomPhrases.style.cssText =
+        'color:white;width:4.7em;text-align:center;margin-top:-25px;opacity:1;';
  }
+
+function fadeOutEffect() {
+     changeContent()
+     var fadeEffect = setInterval(function () {
+        if (!randomPhrases.style.opacity) {
+            randomPhrases.style.opacity = 1;
+        }
+        if (randomPhrases.style.opacity >= 0) {
+            randomPhrases.style.opacity -= 0.1;
+        } else {
+            clearInterval(fadeEffect);
+        }
+    }, 3);
+}
+document.getElementById("questionButton").addEventListener('click', fadeOutEffect);
+
+
+
+
+
 
